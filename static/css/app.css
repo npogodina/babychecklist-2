@@ -1,0 +1,160 @@
+/* General elements*/
+
+ul {
+  list-style-type: none;
+}
+
+li div {
+ display: table-cell; vertical-align: middle;
+}
+
+
+/* Bootstrap 4 general classes */
+
+.lead {
+  font-size: 1.10rem;
+  font-weight: 300;
+}
+
+.on-one-line {
+    display: inline-block;
+}
+
+/*offsetting HTML anchor to adjust for fixed header*/
+.anchor-offset-1 {
+    position:relative;
+}
+
+.anchor-offset-2 {
+    position:absolute;
+    top:-110px;
+}
+
+.carousel-item > img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Modifications to Bootstrap 4 Cards */
+
+/* Colored cards */
+.card-pink {
+  border: 1px solid grey;
+  background-image: linear-gradient(#fef6f5, 80%, #fbe1df);
+}
+
+.card-blue {
+  border: 1px solid grey;
+  background-image: linear-gradient(white, 80%, #e7f5fc);
+}
+
+.card-header-pink {
+  background-color: #f9acbc;
+  border-bottom: 1px solid #fef6f5;
+}
+
+.card-header-blue {
+  background-color: #89cff0;
+  border-bottom: 1px solid #89cff0;
+}
+
+/* Responsiveness */
+.card-deck {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-deck .card {
+  margin-bottom: 15px;
+  min-width: 360px; /* Added minimum width*/
+}
+
+/* Changed min-width from 576 (small) to 992 (large) so that we only see 3 cards in a row on large and extra large viewports */
+@media (min-width: 992px) {
+  .card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card-deck .card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    min-width: 0;
+  }
+}
+
+
+/* Modifications to Bootstrap 4 Featurettes */
+
+.featurette-divider {
+  margin: 3.5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  font-size: 30px;
+}
+
+.featurette-heading {
+  margin-top: 0rem;
+}
+
+
+@media (min-width: 768px) {
+  .f-image-size {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .f-image-size {
+    max-width: 100%;
+  }
+}
+
+
+/* Creating a pink button */
+
+.btn-outline-pink {
+  color: #ffa5ce;
+  border-color: #ffa5ce;
+}
+
+.btn-outline-pink:hover {
+  color: #fff;
+  background-color: #ffa5ce;
+  border-color: #ffa5ce;
+}
+
+.btn-outline-pink:focus, .btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem #ffa5ce;
+}
+
+.btn-outline-pink.disabled, .btn-outline-success:disabled {
+  color: #ffa5ce;
+  background-color: transparent;
+}
+
+.btn-outline-pink:not(:disabled):not(.disabled):active, .btn-outline-pink:not(:disabled):not(.disabled).active,
+.show > .btn-outline-pink.dropdown-toggle {
+  color: #fff;
+  background-color: #ffa5ce;
+  border-color: #ffa5ce;
+}
+
+.btn-outline-pink:not(:disabled):not(.disabled):active:focus, .btn-outline-pink:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-pink.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #ffa5ce;
+}
+
+
+
